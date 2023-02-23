@@ -127,3 +127,17 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# migrations files
+app0_base/migrations/*
+
+# weights files
+*.weights
+
+# log files
+.idea
+.idea/workspace.xml
+
+#settings
+Aratech/settings.py
+
