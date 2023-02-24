@@ -1,15 +1,17 @@
 /* Déclaration des couleurs */
-$lightblue: rgb(147, 169, 210);
-$darkblue: rgb(82, 133, 227);
-$grey: lightgrey;
+$purple: rgb(96, 43, 140);
+$blue: rgb(47, 61, 145);
+$pink: rgb(171, 51, 138);
+$grey: rgb(211, 211, 211);
 $white: whitesmoke;
 $black: #000;
 
 /* Attribution des couleurs */
-$bg-lightblue: $lightblue;
-$bg-darkblue: $darkblue;
-$bg-white: $white;
+$bg-purple: $purple;
+$bg-blue: $blue;
+$bg-pink: $pink;
 $bg-grey: $grey;
+$bg-white: $white;
 
 /* Gestion des fonts */
 $font-size: 14px;

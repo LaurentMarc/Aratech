@@ -16,29 +16,38 @@
 </head>
 
 
-<body>
+<body id="index" class="bg-grey position-relative">
+    
+    <img src="{% static 'app0_base/img/index_back.jpg' %}" alt="" class="image-fond position-absolute">
+
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="" alt="">
-                </a>
+        <nav class="navbar navbar-expand-lg py-1">
+            <div class="container-fluid px-0">
+
+                <!-- Logo de la société -->
+                <div class="d-flex align-items-center ps-md-2 pe-5">
+                    <a class="navbar-brand text-uppercase font-weight-bold p-0 m-0" href="{% url 'index' %}">
+                        <img src="{% static 'app0_base/img/Logo_aratech_horizontal-255x100.png' %}" class="navbar-brand-img" width="200em">
+                    </a>
+                </div>   
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly fs-4 px-5 text-uppercase fw-bold">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">L'équipe</a>
+                            <a class="nav-link purple active" aria-current="page" href="#">{% trans "The team" %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Savoir-Faire</a>
+                            <a class="nav-link purple" href="#">{% trans "Expertise" %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Notre IA</a>
+                            <a class="nav-link purple" href="#">{% trans "Our A.I." %}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link purple" href="#">{% trans "Contact" %}</a>
                         </li>
                     </ul>
                 </div>
@@ -48,9 +57,43 @@
     
     
     <!--Page index-->
-    <div class="bg-darkblue">
-        fjbzriufb
+    <div class="index_page">
+        <div class="d-flex justify-content-around">
+            <h2 class="text1 text-center">Développeur d'applications contenant de l'Intelligence Artificielle</h2>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h2 class="text-center">Un besoin en I.A. ?</h2>
+                <h2 class="text-center">Un projet d'application ?</h2>
+                <button class="btn-perso text-center fs-3">Discutons-en !</button>
+            </div>
+        </div>
+        
+        <h1 class="text2 pink w-75 mx-auto text-center">Simplifier vous la vie avec notre Intelligence Artificielle et/ou une application sur mesure !</h1>
     </div>
+
+
+    <footer class="fixed-bottom d-flex justify-content-evenly align-items-center bg-grey fs-7 py-2">
+        <div class="entreprise d-flex flex-column align-items-center">
+            <!-- Logo de la société -->
+            <a class="text-uppercase font-weight-bold p-0 m-0 pb-1" href="{% url 'index' %}">
+                <img src="{% static 'app0_base/img/logo_aratech_carre-100x120.png' %}" class="navbar-brand-img" width="50em">
+            </a>
+            <p>Rhône-Apes</p>
+            <p>00 00 00 00 00</p>
+        </div>
+
+        <div class="sommaire text-uppercase">
+            <p class="text-center">L'équipe</p>
+            <p class="text-center">Savoir-faire</p>
+            <p class="text-center">Notre I.A.</p>
+            <p class="text-center">Contact</p>
+            <p class="text-center">Mentions légales</p>
+        </div>
+
+        <div class="discutons d-flex flex-column align-items-center">
+            <p class="purple pb-2 fw-bold">Un projet ?</p>
+            <button class="btn-perso text-center">Discutons-en !</button>
+        </div>
+    </footer>
 </body>
 
 

@@ -13,7 +13,7 @@ a {
   line-height: normal;
 
   &:hover {
-      color: $darkblue !important;
+      color: $blue !important;
   }
 }
 
@@ -25,62 +25,71 @@ li {
     list-style-type: none;
 }
 
-.bg-white {
-    background-color: $bg-white !important;;
+.bg-purple {
+    background-color: $bg-purple !important;
+}
+
+.bg-blue {
+    background-color: $bg-blue !important;
+}
+
+.bg-pink {
+    background-color: $bg-pink !important;;
 }
 
 .bg-grey {
     background-color: $bg-grey !important;;
 }
 
-.bg-lightblue {
-    background-color: $bg-lightblue !important;
+.bg-white {
+    background-color: $bg-white !important;;
 }
 
-.bg-darkblue {
-    background-color: $bg-darkblue !important;
+.purple {
+    color: $purple !important;
+}
+
+.blue {
+    color: $blue !important;
+}
+
+.pink {
+    color: $pink !important;
 }
 
 .white {
     color: $white !important;
 }
 
-.grey {
-    color: $grey !important;
+.border-purple {
+    border-color: $purple !important;
 }
 
-.lightblue {
-    color: $lightblue !important;
+.border-blue {
+    border-color: $blue !important;
 }
 
-.darkblue {
-    color: $darkblue !important;
+.border-pink {
+    border-color: $pink !important;
 }
 
-.border-lightblue {
-    border-color: $lightblue !important;
-}
-
-.border-darkblue {
-    border-color: $darkblue !important;
-}
-
-.border-grey {
-    border-color: $grey !important;
-}
-
-.table-lightblue {
-    background-color: $lightblue !important;
+.table-purple {
+    background-color: $purple !important;
 }
 
 .btn-perso {
-    background-color: $white;
-    border-color: $lightblue;
-    color: $black;
-    border-radius: 1em;
+    background-color: $purple;
+    border-color: $black;
+    color: $white;
+    border-radius: 0.4em;
 
     &:hover {
-        background-color: $lightblue;
-        border-color: $lightblue;
+        background-color: $white;
+        // border-color: $purple;
+        color: $purple;
     }
+}
+
+.fs-7 {
+    font-size: 0.85em;
 }
