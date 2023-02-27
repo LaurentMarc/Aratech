@@ -1,0 +1,67 @@
+{% extends "app0_base/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block imagefond %}
+<img src="{% static 'app0_base/img/team_back.jpg' %}" alt="" class="image-fond position-absolute">
+{% endblock imagefond %}
+
+
+{% block content %}
+
+<!-- Page team -->
+<div>
+    <h1 class="text-end py-5 pe-5 purple text-uppercase">Votre projet entre de bonnes mains</h1>
+    <div class="p-5 pink">
+        <h1 class="text-center pt-5 mt-5">Une agence réactive.</h1>
+        <h1 class="text-center">Compétences complémentaires et savoir être sont les grands secrets de notre agence</h1>
+    </div>
+</div>
+
+<!-- Présentations -->
+<div class="team_page bg-grey position-absolute">
+    <h2 class="text-center py-4 px-5">Associés dans la création de l'agence, ils mettent à disposition des clients toutes leurs expériences !</h2>
+    <!-- Présentations -->
+    <div class="d-flex">
+        <!-- Présentation Xavier -->
+        <div class="presentation d-flex flex-column align-items-center pt-5">
+            <div class="purplesquare bg-purple white position-relative">
+                <img src="{% static 'app0_base/img/Xavier.jpg' %}" alt="" class="position-absolute ps-3">
+                <h4 class="presentation_nom text-center mb-1">Xavier ROBELLET</h4>
+                <h6 class="text-center">Chercheur en I.A.</h6>
+            </div>
+            <div class="ps-5 pe-4 py-3">
+                <p>Docteur et chercheur en I.A., il reste en veille constante pour apporter à ses recherches le meilleur !</p>
+                <p>Quand il ne cherche pas, il joue au tennis à haut niveau. Enfin aussi haut que son âge en constante augmentation le lui permet.</p>
+            </div>
+        </div>
+        <!-- Présentation Marc -->
+        <div class="presentation d-flex flex-column align-items-center pt-5">
+            <div class="purplesquare bg-purple white position-relative">
+                <img src="{% static 'app0_base/img/Marc.jpg' %}" alt="" class="position-absolute ps-3">
+                <h4 class="presentation_nom text-center mb-1">Marc LAURENT</h4>
+                <h6 class="text-center">Développeur</h6>
+            </div>
+            <div class="ps-5 pe-4 py-3">
+                <p>Développeur complet, quand il n'est pas les mains dans le camboui pour réparer sa voiture, moto, celle de sa femme ou du voisin, il aime sécurisé les applications et reprendre son code pour l'améliorer</p>
+            </div>
+        </div>
+        <!-- Présentation Nicolas -->
+        <div class="presentation d-flex flex-column align-items-center pt-5">
+            <div class="purplesquare bg-purple white position-relative">
+                <img src="{% static 'app0_base/img/Nicolas.jpg' %}" alt="" class="position-absolute ps-3">
+                <h4 class="presentation_nom text-center mb-1">Nicolas LAMBERT</h4>
+                <h6 class="text-center">Développeur</h6>
+            </div>
+            <div class="ps-5 pe-4 py-3">
+                <p>Développeur, il aime se creuser la tête pour faire des applications modernes et simple d'utilisation.</p>
+                <p>Batteur, Hockeyeur, vous pourrez également le croiser sur son VTT ou au cinéma.</p>
+            </div>
+        </div>
+    </div>
+
+    {% include 'app0_base/footer.html' %}
+
+</div>
+
+{% endblock content %} 
