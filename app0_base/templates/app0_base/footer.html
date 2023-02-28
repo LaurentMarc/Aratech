@@ -6,7 +6,7 @@
 </head>
 
 
-<footer class="{% if '/team' in request.path %}{% else %}fixed-bottom{% endif %} d-flex justify-content-evenly align-items-center bg-grey fs-7 py-2">
+<footer class="{% if '/index' in request.path %}fixed-bottom{% else %}{% endif %} d-flex justify-content-evenly align-items-center bg-grey fs-7 py-2">
     <div class="entreprise d-flex flex-column align-items-center">
         <!-- Logo de la société -->
         <a class="text-uppercase font-weight-bold p-0 m-0 pb-1" href="{% url 'index' %}">
@@ -17,15 +17,15 @@
     </div>
 
     <div class="sommaire text-uppercase">
-        <p class="text-center">L'équipe</p>
-        <p class="text-center">Savoir-faire</p>
-        <p class="text-center">Notre I.A.</p>
-        <p class="text-center">Contact</p>
-        <p class="text-center">Mentions légales</p>
+        <a href="" class="text-center">L'équipe</a>
+        <a href="" class="text-center">Savoir-faire</a>
+        <a href="" class="text-center">Notre I.A.</a>
+        <a href="" class="text-center">Contact</a>
+        <a href="" class="text-center">Mentions légales</a>
     </div>
 
     <div class="discutons d-flex flex-column align-items-center">
         <h6 class="purple mb-2 fw-bold">Un projet ?</h6>
-        <a href="{% url 'index' %}" class="btn btn-perso text-center white">Discutons-en !</a>
+        <a href="{% url 'contact' %}" class="btn btn-perso text-center white">Discutons-en !</a>
     </div>
 </footer>

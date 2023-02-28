@@ -85,11 +85,15 @@ li {
 
     &:hover {
         background-color: $white;
-        // border-color: $purple;
         color: $purple;
     }
 }
 
 .fs-7 {
     font-size: 0.85em;
+}
+
+.decalage_page {
+    top: 0;
+    margin-top: 100vh;
 }
