@@ -1,0 +1,70 @@
+{% extends "app0_base/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block imagefond %}
+<img src="{% static 'app0_base/img/contact_back.jpg' %}" alt="" class="image-fond image-fond-contact position-absolute">
+{% endblock imagefond %}
+
+
+{% block content %}
+
+<!-- Page contact -->
+<div class="intro_contact_page">
+    <h2 class="text-center pt-4 mt-4 white">Une question, on projet, de la curiosité ?</h2>
+    <h1 class="text-center pb-5 mb-5 white">Contactez-nous !</h1>
+    <div class="pt-5 pink w-50 pe-5">
+        <h1 class="text-center pt-5 mt-5">00 00 00 00 00</h1>
+        <h1 class="text-center">contact@aratech.fr</h1>
+    </div>
+</div>
+
+<!-- Formulaire -->
+<div class="contact_page decalage_page bg-grey position-absolute">
+    <div class="d-flex flex-column align-items-center">
+        <form class="contact-form p-3 p-sm-5" action="#!">
+    
+            <!-- Nom prénom -->
+            <div class="d-flex flex-column flex-sm-row">
+                <div>
+                    <p>Nom</p>
+                    <input type="text" id="FormName" class="form-control rounded-pill mb-4">
+                </div>
+                <div class="ms-sm-auto">
+                    <p>Prénom</p>
+                    <input type="text" id="FormFirstName" class="form-control rounded-pill mb-4">
+                </div>
+            </div>
+        
+            <!-- Téléphone Email -->
+            <div class="d-flex flex-column flex-sm-row">
+                <div>
+                    <p>Téléphone</p>
+                    <input type="email" id="FormPhone" class="form-control rounded-pill mb-4">
+                </div>
+                <div class="ms-sm-auto">
+                    <p>E-Mail</p>
+                    <input type="email" id="FormEmail" class="form-control rounded-pill mb-4">
+                </div>
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+                <p>Message</p>
+                <textarea class="form-control rounded-4" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+        
+            <!-- Send button -->
+            <div class="d-flex">
+                <button class="btn btn-perso text-end mt-4 mx-auto" type="submit">Send</button>
+            </div>
+            
+        </form>
+    </div>
+    
+
+    {% include 'app0_base/footer.html' %}
+
+</div>
+
+{% endblock content %} 

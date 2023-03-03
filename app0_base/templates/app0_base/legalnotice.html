@@ -1,0 +1,75 @@
+{% extends "app0_base/base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block imagefond %}
+<img src="{% static 'app0_base/img/legal-notice_back.jpg' %}" alt="" class="image-fond position-absolute">
+{% endblock imagefond %}
+
+
+{% block content %}
+
+<!-- Page contact -->
+<div class="contact_page">
+    <h3 class="text-center pt-4 pink">Legal notice</h3>
+</div>
+
+<!-- Mentions légales -->
+<div class="trucsJuridiquesEnnuyeux">
+    <div class="trucsJuridiquesEnnuyeux--content p-2 px-md-5 py-md-4">
+
+        <p>ARATECH est une marque déposée.</p>
+        <p>Conformément à la loi Informatique et Libertés du 6 janvier 1978, le site Internet www.aratech.fr est déclarés à la CNIL sous le numéro 4932479.</p>
+        
+
+        <h5 class="ps-2 pt-4">Editeur du site</h5>
+        <p>ARATECH</p>
+        <!-- <p>adresse</p> -->
+        <!-- <p>69000 LYON</p> -->
+
+        <!-- <p>Téléphone : oo oo oo oo oo</p> -->
+
+        <!-- <p class="pt-2">Numéro SIRET (siège) : 00000000000000</p>
+        <p class="py-1">Capital social : 000 Euros</p>
+        <p>Directeur Général : Prénom NOM</p>
+        
+        <p>N° de TVA Intracommunautaire :	FR00000000000</p> -->
+
+        <h5 class="ps-2 pt-4">Hébergeur du site</h5>
+        <p>OVH</p>
+        <p>2 Rue Kellermann</p>
+        <p>59100 ROUBAIX</p>
+        <p class="pt-2">09 72 10 10 07</p>
+
+        <h5 class="ps-2 pt-4">Médiateur à la consommation</h5>
+        <p>Tout consommateur a le droit de recourir à un médiateur de la consommation en vue de la résolution amiable du litige qui l’oppose à un professionnel.</p>
+        <p class="py-2">Le recours au médiateur à la consommation est gratuit pour l'abonné à domicile.</p>
+        <p>Les coordonnées du médiateur à la consommation sont :</p>
+        <p class="py-1">•	Adresse web : https://www.mediationconso-ame.com/</p>
+        <p>•	Adresse postale : AME Conso, 11 place Dauphine 75001 PARIS</p>
+        <p class="pt-1">•	Téléphone : 09 53 01 02 69</p>
+
+        <h5 class="ps-2 pt-4">Copyright</h5>
+        <p>La structure générale, les textes, photographie, sons, séquences vidéos, graphismes et tout autre élément composant le SITE sont la propriété exclusive de la société ARATECH ou de ses partenaires. L’ensemble du SITE relève de la législation française et internationale sur les droits d’auteur et de la propriété intellectuelle.</p>
+        <p class="pt-2">Toute utilisation ou reproduction, totale ou partielle, du SITE, des éléments qui le composent et/ou des informations qui y figurent, par quelque procédé que ce soit, sans l’autorisation du titulaire du droit sur ces éléments, sera immédiatement poursuivi, soit dans le cadre d’une action en contrefaçon, soit dans le cadre d’une action en concurrence déloyale.</p>
+
+        <h5 class="ps-2 pt-4">Liens hypertextes</h5>
+        <p>ARATECH autorise tout site Internet à établir un lien pointant vers tout ou partie du site, sous réserve des dispositions légales en vigueur, la SOCIÉTÉ se réservant le droit, à tout moment, sans préavis et sans avoir à motiver sa décision, d’interdire ce lien.</p>
+
+
+        <h5 class="ps-2 pt-4">Politique de confidentialité</h5>
+        <p>Le site internet www.aratech.fr s’engage à respecter la vie privée des utilisateurs et la confidentialité de leurs données personnelles lors de leur navigation sur le site.</p>
+
+        <h5 class="ps-2 pt-4">Collecte des Données Personnelles</h5>
+        <p>Des données peuvent être collectée lorsque l’utilisateur complète un questionnaire de contact.</p>
+
+        <h5 class="ps-2 pt-4">Cookies</h5>
+        <p>Ce site n'utilise pas de cookies</p>
+
+    </div>
+
+    {% include 'app0_base/footer.html' %}
+
+</div>
+
+{% endblock content %} 

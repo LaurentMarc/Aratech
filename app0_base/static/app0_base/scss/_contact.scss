@@ -1,0 +1,16 @@
+.image-fond-contact {
+    opacity: 0.9 !important;
+}
+
+.contact-form {
+    width: 80% !important;
+
+    @media screen and (min-width: $desktops-media-rupture) {
+        width: 60% !important;
+    }
+
+    p {
+        padding-bottom: 0.2em;
+        font-weight: 500;
+    }
+}

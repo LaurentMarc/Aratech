@@ -21,3 +21,10 @@ def ai(request):
 
 def contact(request):
     return render(request, 'app0_base/contact.html')
+
+
+def legalnotice(request):
+    return render(request, 'app0_base/legalnotice.html')
+
+
+
