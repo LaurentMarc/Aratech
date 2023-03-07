@@ -5,6 +5,7 @@
 p {
     margin-bottom: 0;
     line-height: normal;
+    font-size: 0.9em;
 }
   
 a {
@@ -81,7 +82,8 @@ li {
     background-color: $purple;
     border-color: $black;
     color: $white;
-    border-radius: 0.4em;
+    border-radius: 0.45em;
+    padding: 0.2em 0.5em;
 
     &:hover {
         background-color: $white;
@@ -95,11 +97,16 @@ li {
 
 .decalage_page {
     top: 0;
-    margin-top: 100vh;
     width: 100%;
+
+    @media screen and (min-width: $tablette-media-rupture) {
+        position: absolute;
+        margin-top: 100vh;
+    }
 }
 
 .image-fond {
+    background-size: cover;
     opacity: 0.12;
     height: 100vh;
     z-index: -10;

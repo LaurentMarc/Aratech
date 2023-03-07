@@ -6,7 +6,7 @@
 </head>
 
 
-<footer class="{% if '/index' in request.path %}fixed-bottom{% else %}{% endif %} d-flex justify-content-evenly align-items-center bg-grey fs-7 py-2">
+<footer class="{% if '/index' in request.path %}fixed-bottom{% else %}{% endif %} d-flex justify-content-around justify-content-md-evenly align-items-center bg-grey fs-7 py-2">
     <div class="entreprise d-flex flex-column align-items-center">
         <!-- Logo de la société -->
         <a class="text-uppercase font-weight-bold p-0 m-0 pb-1" href="{% url 'index' %}">
@@ -17,15 +17,27 @@
     </div>
 
     <div class="sommaire text-uppercase d-flex flex-column">
-        <a href="{% url 'team' %}" class="text-center">L'équipe</a>
-        <a href="{% url 'expertise' %}" class="text-center py-1">Savoir-faire</a>
-        <a href="{% url 'our ai' %}" class="text-center">Notre I.A.</a>
-        <a href="{% url 'contact' %}" class="text-center py-1">Contact</a>
-        <a href="{% url 'legal notice' %}" class="text-center">Mentions légales</a>
+        <a href="{% url 'team' %}" class="text-center">
+            <p>L'équipe</p>
+        </a>
+        <a href="{% url 'expertise' %}" class="text-center py-1">
+            <p>Savoir-faire</p>
+        </a>
+        <a href="{% url 'our ai' %}" class="text-center">
+            <p>Notre I.A.</p>
+        </a>
+        <a href="{% url 'contact' %}" class="text-center py-1">
+            <p>Contact</p>
+        </a>
+        <a href="{% url 'legal notice' %}" class="text-center">
+            <p>Mentions légales</p>
+        </a>
     </div>
 
     <div class="discutons d-flex flex-column align-items-center">
         <h6 class="purple mb-2 fw-bold">Un projet ?</h6>
-        <a href="{% url 'contact' %}" class="btn btn-perso text-center white">Discutons-en !</a>
+        <a href="{% url 'contact' %}" class="btn btn-perso text-center white">
+            <h7>Discutons-en !</h7>
+        </a>
     </div>
 </footer>

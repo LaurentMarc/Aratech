@@ -14,34 +14,34 @@
 
 
 <header>
-    <nav id="navbar" class="navbar navbar-expand-lg py-1">
+    <nav id="navbar" class="navbar navbar-expand-md {% if '/contact' in request.path %}navbarcontact{% else %}{% endif %}  py-1">
         <div class="container-fluid px-0">
 
             <!-- Logo de la société -->
-            <div class="d-flex align-items-center ps-md-2 pe-5">
+            <div class="d-flex align-items-center ps-2 pe-md-2 pe-lg-5">
                 <a class="navbar-brand text-uppercase font-weight-bold p-0 m-0" href="{% url 'index' %}">
-                    <img src="{% static 'app0_base/img/Logo_aratech_horizontal-255x100.png' %}" class="navbar-brand-img" width="200em">
+                    <img src="{% static 'app0_base/img/Logo_aratech_horizontal-255x100.png' %}" class="navbar-brand-img" width="130em">
                 </a>
             </div>   
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- collapse  -->
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-evenly fs-4 px-5 text-uppercase fw-bold">
+            <div class="collapse navbar-collapse 100vh" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 d-flex justify-content-evenly fs-6 px-md-3 px-lg-5 text-uppercase fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link purple {% if request.path == team %}pink{% endif %}" aria-current="page" href="{% url 'team' %}">{% trans "The team" %}</a>
+                        <a class="nav-link purple {% if request.path == team %}pink{% endif %} text-center" aria-current="page" href="{% url 'team' %}">{% trans "The team" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link purple {% if request.path == expertise %}pink{% endif %}" href="{% url 'expertise' %}">{% trans "Expertise" %}</a>
+                        <a class="nav-link purple {% if request.path == expertise %}pink{% endif %} text-center" href="{% url 'expertise' %}">{% trans "Expertise" %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link purple {% if request.path == ai %}pink{% endif %}" href="{% url 'our ai' %}">{% trans "Our A.I." %}</a>
+                        <a class="nav-link purple {% if request.path == ai %}pink{% endif %} text-center" href="{% url 'our ai' %}">{% trans "Our A.I." %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link purple {% if request.path == contact %}pink{% endif %}" href="{% url 'contact' %}">{% trans "Contact" %}</a>
+                        <a class="nav-link purple {% if request.path == contact %}pink{% endif %} text-center" href="{% url 'contact' %}">{% trans "Contact" %}</a>
                     </li>
                 </ul>
             </div>

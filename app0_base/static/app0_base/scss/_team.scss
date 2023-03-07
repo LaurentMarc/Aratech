@@ -1,10 +1,14 @@
 .purplesquare {
     height: 20em;
     width: 17em;
+    margin-right: 1.5em;
 }
 
 .presentation {
-    width: 33.333333%;
+
+    @media screen and (min-width: $tablette-media-rupture) {
+        width: 33.333333%;
+    }
 
     img {
         height: 20em;
@@ -13,5 +17,5 @@
 }
 
 .presentation_nom {
-    padding-top: 10.9em;
+    padding-top: 263px;
 }

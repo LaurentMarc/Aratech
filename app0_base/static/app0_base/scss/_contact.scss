@@ -2,8 +2,38 @@
     opacity: 0.9 !important;
 }
 
+.navbarcontact {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    background-color: $grey;
+}
+
+.intro_contact_page {
+    padding-top: 5em;
+
+    @media screen and (min-width: $tablette-media-rupture) {
+        padding-top: 9em;
+    }
+
+    .pink {
+        padding-top: 4em;
+
+        @media screen and (min-width: $tablette-media-rupture) {
+            width: 50%;
+            padding-top: 23em;
+        }
+    }
+}
+
 .contact-form {
-    width: 80% !important;
+    width: 100%;
+    
+    @media screen and (min-width: $tablette-media-rupture) {
+        width: 80% !important;
+    }
 
     @media screen and (min-width: $desktops-media-rupture) {
         width: 60% !important;
