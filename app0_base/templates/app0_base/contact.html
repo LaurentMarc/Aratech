@@ -22,17 +22,20 @@
 <!-- Formulaire -->
 <div class="contact_page decalage_page bg-grey">
     <div class="d-flex flex-column align-items-center">
-        <form class="contact-form p-4 p-sm-5" action="#!">
+        <form class="contact-form p-4 p-sm-5" method="post">
+
+            {% csrf_token %}
+            <!-- {{ form.as_p }} -->
     
             <!-- Nom prénom -->
             <div class="d-flex flex-column flex-sm-row">
                 <div>
                     <p>Nom</p>
-                    <input type="text" id="FormName" class="form-control rounded-pill mb-4">
+                    <input type="text" id="id-name" name="name" class="form-control rounded-pill mb-4">
                 </div>
                 <div class="ms-sm-auto">
                     <p>Prénom</p>
-                    <input type="text" id="FormFirstName" class="form-control rounded-pill mb-4">
+                    <input type="text" id="id-firstname" name="firstname" class="form-control rounded-pill mb-4">
                 </div>
             </div>
         
@@ -40,18 +43,18 @@
             <div class="d-flex flex-column flex-sm-row">
                 <div>
                     <p>Téléphone</p>
-                    <input type="email" id="FormPhone" class="form-control rounded-pill mb-4">
+                    <input type="text" id="id_phone" name="phone" class="form-control rounded-pill mb-4">
                 </div>
                 <div class="ms-sm-auto">
                     <p>E-Mail</p>
-                    <input type="email" id="FormEmail" class="form-control rounded-pill mb-4">
+                    <input type="email" id="id_email" name="email" class="form-control rounded-pill mb-4">
                 </div>
             </div>
 
             <!-- Message -->
             <div class="form-group">
                 <p>Message</p>
-                <textarea class="form-control rounded-4" id="exampleFormControlTextarea2" rows="3"></textarea>
+                <textarea itemid="id_message" class="form-control rounded-4" id="message" rows="3"></textarea>
             </div>
         
             <!-- Send button -->
@@ -60,6 +63,10 @@
             </div>
             
         </form>
+
+        <p class="bloctel pb-1 px-2 px-md-5">En soumettant ce formulaire, j’accepte que les informations saisies soient exploitées dans le cadre de la demande de contact. Pour plus d'informations, veuillez consulter nos <a href="{% url 'legal notice' %}"><u>mentions légales</u></a>.</p>
+        <p class="bloctel pb-5 px-2 px-md-5">Conformément à l'article L.223-2 du Code de la Consommation, nous vous informons de l’existence de la liste d'opposition au démarchage téléphonique « Bloctel », sur laquelle vous pouvez vous inscrire (https://conso.bloctel.fr/).</p>
+
     </div>
     
 

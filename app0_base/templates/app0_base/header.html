@@ -14,22 +14,32 @@
 
 
 <header>
-    <nav id="navbar" class="navbar navbar-expand-md {% if '/contact' in request.path %}navbarcontact{% else %}{% endif %}  py-1">
+    <nav id="navbar" class="navbar navbar-expand-md mx-auto {% if '/contact' in request.path %}navbarcontact{% else %}{% endif %} py-1">
         <div class="container-fluid px-0">
 
             <!-- Logo de la société -->
             <div class="d-flex align-items-center ps-2 pe-md-2 pe-lg-5">
                 <a class="navbar-brand text-uppercase font-weight-bold p-0 m-0" href="{% url 'index' %}">
-                    <img src="{% static 'app0_base/img/Logo_aratech_horizontal-255x100.png' %}" class="navbar-brand-img" width="130em">
+                    <img src="{% static 'app0_base/img/Logo_aratech_horizontal-255x100.png' %}" class="navbar-brand-img">
                 </a>
             </div>   
 
-            <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Bouton menu burger -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span>
+                    <svg width="3em" height="3em" viewbox="0 0 40 40">
+                        <title>interface-burger</title>
+                        <g>
+                            <line x1="8" y1="12" x2="32" y2="12" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.6"/>
+                            <line x1="8" y1="20" x2="32" y2="20" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.6"/>
+                            <line x1="8" y1="28" x2="20.8" y2="28" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.6"/>
+                        </g>
+                    </svg>
+                </span>  
             </button>
 
             <!-- collapse  -->
-            <div class="collapse navbar-collapse 100vh" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mt-5 mt-md-0" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0 w-100 d-flex justify-content-evenly fs-6 px-md-3 px-lg-5 text-uppercase fw-bold">
                     <li class="nav-item">
                         <a class="nav-link purple {% if request.path == team %}pink{% endif %} text-center" aria-current="page" href="{% url 'team' %}">{% trans "The team" %}</a>

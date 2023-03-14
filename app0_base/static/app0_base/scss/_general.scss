@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+body, #navbar {
+    max-width: 1920px;
+}
+
 p {
     margin-bottom: 0;
     line-height: normal;
